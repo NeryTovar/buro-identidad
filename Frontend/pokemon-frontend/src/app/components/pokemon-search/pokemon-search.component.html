@@ -1,0 +1,17 @@
+<div class="container mt-4">
+    <mat-card>
+        <mat-card-content>
+            <form (ngSubmit)="searchPokemon()">
+                <mat-form-field appearance="fill">
+                    <mat-label>Nombre del Pokémon</mat-label>
+                    <input matInput [(ngModel)]="pokemonName" name="pokemonName" placeholder="Ejemplo, Pikachu">
+                </mat-form-field>
+                <button mat-raised-button color="primary" type="submit" [disabled]="loading">
+                    {{ loading ? 'Buscando...' : 'Buscar' }}
+                </button>
+            </form>
+            <app-pokemon-detail *ngIf="pokemon" [pokemon]="pokemon"></app-pokemon-detail>
+            <app-error *ngIf="error" [message]="error"></app-error>
+        </mat-card-content>
+    </mat-card>
+</div>
