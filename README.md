@@ -15,7 +15,7 @@ Aplicación fullstack que permite buscar información de Pokémon usando la Poke
 ## Instrucciones para ejecutar
 
 ### Backend
-1. Clona el repositorio: `git clone https://github.com/NeryTovar/prueba-buro-identidad-teknei`
+1. Clona el repositorio: `git clone https://github.com/NeryTovar/buro-identidad`
 2. Navega al directorio del backend: `cd demo`
 3. Compila e instala dependencias: `mvn clean install`
 4. Ejecuta la aplicación: `mvn spring-boot:run`
